@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <title>Fifteen Puzzle</title>
+  <script src='../jquery-2.1.0.min.js'></script>
+  <script src='tile.js'></script>
+  <script src='board.js'></script>
+  <script>
+    $(document).ready( function(){
+      var canvas = document.getElementById('fifteen_puzzle');
+      var puzzler = new FifteenPuzzle( canvas );
+    });
+  </script>
+</head>
+<body>
+  <h1>Fifteen Puzzle Example</h1>
+  <h2>Move the pieces until the numbers make sense ( the empty square in lower right ).</h2>
+  <canvas id='fifteen_puzzle' width='256' height='256'></canvas>
+</body>
+</html>
